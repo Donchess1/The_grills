@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../My_flashcard"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "The_grills"
+	}
+}
