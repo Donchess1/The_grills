@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <ul>
+        {% for item in cart.cartitem_set.all %}
+            <li>
+                <h2>{{ item.product.name }}</h2>
+                <p>Quantity: {{ item.quantity }}</p>
+                <p>Total: ${{ item.product.price|floatformat:2 }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'product_list' %}">Continue Shopping</a>
+</body>
+</html>

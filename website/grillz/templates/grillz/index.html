@@ -1,118 +1,55 @@
-{% load static %}
-<!DOCTYPE html>
-<!-- ABODUNRIN STEPHEN | RITA EGWATU  -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Grills</title>
+{% extends 'grillz/base.html' %}
+{%load static %}
 
-    <!-- Swiper JS CSS-->
-    <link rel="stylesheet" href="{% static 'grillz/css/style.css' %}">
+{% block title %}Home - The Grills{% endblock %}
 
-    <!--Scroll Reveal>
-    <link rel="stylesheet" href="{% static 'grillz/css/scrollreveal.min.css' %}"-->
-
-    <!--swiper-->
-    <link rel="stylesheet" href="{% static 'grillz/css/swiper-bundle.min.css' %}">
-    
-    <!-- Boxicons -->
-    <!--link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'-->
-        
-
-</head>
-<body>
-<!-- Header -->
-    <header class="header">
-            <nav class="nav container flex">
-                    <a href="#" class="logo-content flex">
-                        <img src="{% static 'grillz/grills/grill-logo.png' %}" class="logo-icon">
-                        <span class="logo-text">The Grills.</span>
-                    </a>
-
-                    <div class="menu-content">
-                            <ul class="menu-list flex">
-                                    <li><a href="#home" class="nav-link active-navlink">home</a></li>
-                                    <li><a href="#about" class="nav-link">about</a></li>
-                                    <li><a href="#menu" class="nav-link">menu</a></li>
-                                    <li><a href="#review" class="nav-link">review</a></li>
-                            </ul>
-
-                            <div class="media-icons flex">
-                                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
-                                    <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
-                                    <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
-                                    <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
-                                    <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
-                            </div>
-
-                            <i class='bx bx-x navClose-btn'></i>
-                        </div>
-                        
-                        <div class="contact-content flex">
-                            <i class='bx bx-phone phone-icon' ></i>
-                            <span class="phone-number">08132829809</span>
-                        </div>
-
-                        <i class='bx bx-menu navOpen-btn'></i>
-                </nav>
-        
-    </header>
+{% block content %}
 
 <!-- Home Section -->
-    <main>
-        <section class="home" id="home">
-                <div class="home-content">
-                        <div class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                                <img src= "{% static 'grillz/grills/home.jpg' %}" alt="" class="home-img">
-                                                  
-                                                <div class="home-details">
-                                                        <div class="home-text">
-                                                                <h4 class="homeSubtitle">We really like what we do.</h4>
-                                                                <h2 class="homeTitle">Deep Grilling <br> Perfect Seasoning</h2>
-                                                        </div>
-
-                                                        <button class="button">Explore</button>
-                                                </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                                <img src="{% static 'grillz/grills/door2.jpg' %}" alt="" class="home-img">
-
-                                                <div class="home-details">
-                                                        <div class="home-text">
-                                                                <h4 class="homeSubtitle">your day is not complete.</h4>
-                                                                <h2 class="homeTitle">Without Our Exclusive <br> Grills at your door step</h2>
-                                                        </div>
-
-                                                        <button class="button">Order Now</button>
-                                                </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                                <img src="{% static 'grillz/grills/family.jpg' %}" alt="" class="home-img">
-
-                                                <div class="home-details">
-                                                        <div class="home-text">
-                                                                <h4 class="homeSubtitle">Planning a perfect date?.</h4>
-                                                                <h2 class="homeTitle">All Grills <br> To Meet Your dream Taste</h2>
-                                                        </div>
-
-                                                        <button class="button">Explore</button>
-                                                </div>
-                                        </div>
-                                </div>
-
-                                <div class="swiper-button-next swiper-navBtn"></div>
-                                <div class="swiper-button-prev swiper-navBtn"></div>
-                                <div class="swiper-pagination"></div>
+<section class="home" id="home">
+        <div class="home-content">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src= "{% static 'grillz/grills/home.jpg' %}" alt="" class="home-img">
+                        <div class="home-details">
+                            <div class="home-text">
+                                <h4 class="homeSubtitle">We really like what we do.</h4>
+                                <h2 class="homeTitle">Deep Grilling <br> Perfect Seasoning</h2>
+                            </div>
+                            <button class="button"><a href="/shop">Shop Cart</a></button> <!-- Shop Cart Button -->
                         </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <img src="{% static 'grillz/grills/door2.jpg' %}" alt="" class="home-img">
+                        <div class="home-details">
+                            <div class="home-text">
+                                <h4 class="homeSubtitle">your day is not complete.</h4>
+                                <h2 class="homeTitle">Without Our Exclusive <br> Grills at your door step</h2>
+                            </div>
+                            <button class="button"><a href="/shop">Order Now</a></button> <!-- Shop Cart Button -->
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <img src="{% static 'grillz/grills/family.jpg' %}" alt="" class="home-img">
+                        <div class="home-details">
+                            <div class="home-text">
+                                <h4 class="homeSubtitle">Planning a perfect date?.</h4>
+                                <h2 class="homeTitle">All Grills <br> To Meet Your dream Taste</h2>
+                            </div>
+                            <button class="button"><a href="/shop">Explore</a></button> <!-- Shop Cart Button -->
+                        </div>
+                    </div>
                 </div>
-        </section>
-
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
     
 <!-- About Section -->
         <section class="section about" id="about">
@@ -261,19 +198,6 @@
                     </div>
             </div>
         </section>
-<!-- Shopping Cart Modal >
-<div id="cart-modal" class="cart-modal">
-        <div class="cart-content">
-                <span class="close">&times;</span>
-                <h2>Your Cart</h2>
-                <div id="cart-items"></div>
-                <div class="cart-total">
-                        <h3>Total: ₦<span id="cart-total">0.00</span></h3>
-                </div>
-                <button id="checkout">Checkout</button>
-        </div>
-</div-->
-
     
 <!-- Brand Section -->
         <section class="section brand">
@@ -376,72 +300,5 @@
                 </div>
             </div>
         </section>
+{% endblock %}
         
-    
-<!-- Footer Section -->
-        <footer class="section footer">
-            <div class="footer-container container">
-                    <div class="footer-content">
-                        <a href="#" class="logo-content flex">
-                                <img src="{% static 'grillz/grills/grill-logo.png' %}" class="logo-icon">
-                                <span class="logo-text">The Grills.</span>
-                            </a>
-
-                            <p class="content-description">The Grills...let the flames unleash the flavor!</p>
-
-                            <div class="footer-location flex">
-                                <img src="{% static 'grillz/grills/grill-logo.png' %}" class="logo-icon">
-                                
-                                <div class="location-text">
-                                        Plot 15, Block 25, GRA Aule Akure. Ondo State.
-                                </div>
-                            </div>
-                    </div>
-
-                    <div class="footer-linkContent">
-                            <ul class="footer-links">
-                                    <h4 class="footerLinks-title">Facility</h4>
-
-                                    <li><a href="#" class="footer-link">Private Room</a></li>
-                                    <li><a href="#" class="footer-link">Meeting Room</a></li>
-                                    <li><a href="#" class="footer-link">Event Room</a></li>
-                                    <li><a href="#" class="footer-link">Creative Studio</a></li>
-                                    <li><a href="#" class="footer-link">Custom Room</a></li>
-                            </ul>
-                            <ul class="footer-links">
-                                    <h4 class="footerLinks-title">Facility</h4>
-
-                                    <li><a href="#" class="footer-link">The Grills</a></li>
-                                    <li><a href="#" class="footer-link">locations</a></li>
-                                    <li><a href="#" class="footer-link">Dishes</a></li>
-                            </ul>
-                            <ul class="footer-links">
-                                    <h4 class="footerLinks-title">Support</h4>
-
-                                    <li><a href="#" class="footer-link">About Us</a></li>
-                                    <li><a href="#" class="footer-link">FAQs</a></li>
-                                    <li><a href="#" class="footer-link">Private Policy</a></li>
-                                    <li><a href="#" class="footer-link">Help Us</a></li>
-                            </ul>
-                    </div>
-            </div>
-            <div class="footer-copyRight">&#169; CodingLab. All rigths reserved</div>
-        </footer>
-
-<!-- Scroll Up -->
-        <a href="#home" class="scrollUp-btn flex">
-                <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
-        </a>
-
-</main>
-
-<!-- Swiper JS -->
-<script src="{% static 'grillz/js/swiper-bundle.min.js'%}"></script>
-
-<!-- Scroll Reveal-->
-<script src="{% static 'grillz/js/scrollreveal.js' %}"></script>
-
-<!-- JavaScript-->
-<script src="{% static 'grillz/js/script.js' %}"></script>
-</body>
-</html>

@@ -916,4 +916,13 @@ img{
     padding: 1.4rem 2rem;
 
 }
+/* CSS for Shop-Cart Button */
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button a:hover {
+  color: #fff; /* or any color that suits your theme */
+}
 }
