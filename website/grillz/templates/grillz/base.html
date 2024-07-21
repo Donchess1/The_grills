@@ -11,15 +11,10 @@
     <!-- Swiper JS CSS-->
     <link rel="stylesheet" href="{% static 'grillz/css/style.css' %}">
 
-    <!--Scroll Reveal>
-    <link rel="stylesheet" href="{% static 'grillz/css/scrollreveal.min.css' %}"-->
 
     <!--swiper-->
     <link rel="stylesheet" href="{% static 'grillz/css/swiper-bundle.min.css' %}">
     
-    <!-- Boxicons -->
-    <!--link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'-->
-        
 
 </head>
 <body>
@@ -32,10 +27,9 @@
                 </a>
                 <div class="menu-content">
                         <ul class="menu-list flex">
-                                <li><a href="{% url 'home' %}" class="nav-link active-navlink">home</a></li>
-                                <li><a href="#about" class="nav-link">about</a></li>
-                                <li><a href="#menu" class="nav-link">menu</a></li>
-                                <li><a href="#review" class="nav-link">review</a></li>
+                                <li><a href="{% url 'index' %}" class="nav-link active-navlink">home</a></li>
+				<li><a href="{% url 'review' %}" class="nav-link active-navlink">review</a></li>
+                                <li><a href="{% url 'menu' %}" class="nav-link active-navlink">menu</a></li>
                                 <li><a href="/shop" class="nav-link">Shop Cart</a></li> <!-- Shop Cart Button -->
                         </ul>
 
@@ -58,6 +52,8 @@
                 </nav>
         </header>
 	{% block content %}
+
+	 
 	{% endblock %}
 	<!-- Footer Section -->
         <footer class="section footer">

@@ -1,0 +1,12 @@
+{% extends 'grillz/base.html' %}
+
+{% block title %}Add Product - The Grills{% endblock %}
+
+{% block content %}
+<h2>Add Product</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="button">Add Product</button>
+</form>
+{% endblock %}

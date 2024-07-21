@@ -10,17 +10,18 @@
         <div class="home-content">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+			<!-- first slide -->
+                    <div class="swiper-slide">i
                         <img src= "{% static 'grillz/grills/home.jpg' %}" alt="" class="home-img">
                         <div class="home-details">
                             <div class="home-text">
                                 <h4 class="homeSubtitle">We really like what we do.</h4>
                                 <h2 class="homeTitle">Deep Grilling <br> Perfect Seasoning</h2>
                             </div>
-                            <button class="button"><a href="/shop">Shop Cart</a></button> <!-- Shop Cart Button -->
+			    <button class="button"><a href="{% url 'signup' %}">SignUp</a></button> <!-- SignUp Button -->
                         </div>
                     </div>
-    
+		    <!-- second slide -->
                     <div class="swiper-slide">
                         <img src="{% static 'grillz/grills/door2.jpg' %}" alt="" class="home-img">
                         <div class="home-details">
@@ -31,7 +32,7 @@
                             <button class="button"><a href="/shop">Order Now</a></button> <!-- Shop Cart Button -->
                         </div>
                     </div>
-    
+		    <!-- third slide -->
                     <div class="swiper-slide">
                         <img src="{% static 'grillz/grills/family.jpg' %}" alt="" class="home-img">
                         <div class="home-details">
@@ -39,7 +40,7 @@
                                 <h4 class="homeSubtitle">Planning a perfect date?.</h4>
                                 <h2 class="homeTitle">All Grills <br> To Meet Your dream Taste</h2>
                             </div>
-                            <button class="button"><a href="/shop">Explore</a></button> <!-- Shop Cart Button -->
+                            <button class="button"><a href="/shop">Go to Shop</a></button> <!-- Shop Cart Button -->
                         </div>
                     </div>
                 </div>
@@ -91,114 +92,6 @@
                 </div>
         </section>
 
-    
-<!-- Menu Section -->
-        <section class="section menu" id="menu">
-            <div class="menu-container container">
-                    <div class="meu-text">
-                            <h4 class="section-subtitle"><i>Our Menu</i></h4>
-                            <h2 class="section-title">Our Popular Menu</h2>
-                            <p class="section-description">
-                                Our place designed by pro architecture with psychologist to build best place suit you.  Our place designed by pro architecture with psychologist to build best place suit you.
-                            </p>
-                    </div>
-
-                    <div class="menu-content">
-                            <div class="menu-items">
-                                    <div class="menu-item flex">
-                                            <img src="{% static 'grillz/grills/alt2home.jpeg' %}" alt="" class="menu-img">
-
-                                            <div class="menuItem-details">
-                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
-                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
-                                            </div>
-
-                                            <div class="menuItem-price flex">
-                                                <h3>₦<span class="discount-price">18.99</span></h3>
-                                                    <span class="real-price">₦20.66</span>
-                                            </div>
-                                    </div>
-                                    <div class="menu-item flex">
-                                            <img src="{% static 'grillz/grills/alt2home.jpeg' %}" alt="" class="menu-img">
-
-                                            <div class="menuItem-details">
-                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
-                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
-                                            </div>
-
-                                            <div class="menuItem-price flex">
-                                                <h3>₦<span class="discount-price">18.99</span></h3>
-                                                    <span class="real-price">₦20.66</span>
-                                            </div>
-                                    </div>
-                                    <div class="menu-item flex">
-                                            <img src="{% static 'grillz/grills/alt2home.jpeg' %}" alt="" class="menu-img">
-
-                                            <div class="menuItem-details">
-                                                    <h4 class="menuItem-topic">Grilled Catfish</h4>
-                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
-                                            </div>
-
-                                            <div class="menuItem-price flex">
-                                                <h3>₦<span class="discount-price">18.99</span></h3>
-                                                    <span class="real-price">₦20.66</span>
-                                            </div>
-                                    </div>
-                                    <div class="menu-item flex">
-                                            <img src= "{% static 'grillz/grills/alt2home.jpeg' %}" alt="" class="menu-img">
-
-                                            <div class="menuItem-details">
-                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
-                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
-                                            </div>
-
-                                            <div class="menuItem-price flex">
-                                                <h3>₦<span class="discount-price">18.99</span></h3>
-                                                    <span class="real-price">₦20.66</span>
-                                            </div>
-                                    </div>
-                                    <button class="add-to-cart" data-name="Americano Roasted Coffee" data-price="18.99">Add to Cart</button>
-                                   
-                            </div>
-                            
-                            <div class="time-table">
-                                    <span class="time-topic">Catogries Time</span>
-
-                                    <ul class="time-lists">
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Sunday</span>
-                                                    <span class="open-time">Closed</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Monday</span>
-                                                    <span class="open-time">7.00am - 3.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Tuesday</span>
-                                                    <span class="open-time">7.00am - 3.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Wednesday</span>
-                                                    <span class="open-time">7.00am - 3.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Thursday</span>
-                                                    <span class="open-time">7.00am - 3.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Friday</span>
-                                                    <span class="open-time">7.00am - 3.00pm</span>
-                                            </li>
-                                            <li class="time-list flex">
-                                                    <span class="open-day"> Saturday</span>
-                                                    <span class="open-time">9.00am - 2.00pm</span>
-                                            </li>
-                                    </ul>
-                            </div>
-                    </div>
-            </div>
-        </section>
-    
 <!-- Brand Section -->
         <section class="section brand">
             <div class="brand-container container">
@@ -224,81 +117,6 @@
                     </div>
             </div>
         </section>
-
     
-<!-- Reviews Section -->
-        <section class="section review" id="review">
-            <div class="review-container container">
-                    <div class="review-text">
-                            <h4 class="section-subtitle"><i>Reviews</i></h4>
-                            <h2 class="section-title">What Clients Says</h2>
-                            <p class="section-description">Some reviews that customer said about coffee services and business Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt magnam totam repellat, labore commodi exercitationem!</p>
-                    </div>
-
-                    <div class="tesitmonial swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                    <div class="testi-content swiper-slide flex">
-                                            <img src="{% static 'grillz/grills/customer1.jpg' %}" alt="" class="review-img">
-                                            <p class="review-quote">The best grilling experience I've had, hands down. Can't wait to return to The Grills!"</p>
-                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
-
-                                            <div class="testi-personDetails flex">
-                                                    <span class="name">Abodunrin Donchess</span>
-                                                    <span class="job">App Developer</span>
-                                            </div>
-                                    </div>
-                                    <div class="testi-content swiper-slide flex">
-                                            <img src="{% static 'grillz/grills/customer2.jpg' %}" alt="" class="review-img">
-                                            <p class="review-quote">"The Grills were absolutely mouthwatering! Each bite delivered the perfect blend of smoky flavor and juicy tenderness. An unforgettable dining experience that left us craving for more. Highly recommended!"</p>
-                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
-
-                                            <div class="testi-personDetails flex">
-                                                    <span class="name">Abodunrin Eriifeoluwa</span>
-                                                    <span class="job">Fullstack Developer</span>
-                                            </div>
-                                    </div>
-                                    <div class="testi-content swiper-slide flex">
-                                            <img src="{% static 'grillz/grills/customer5.jpg' %}" alt="" class="review-img">
-                                            <p class="review-quote">Each bite calms my nerves. Thank you for the experience of pure, delicious masters in grilling! It suddenly become my tranquillizer</p>
-                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
-
-                                            <div class="testi-personDetails flex">
-                                                    <span class="name">Motunrayo Abodunrin</span>
-                                                    <span class="job">Travel Agent</span>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next swiper-navBtn"></div>
-                                <div class="swiper-button-prev swiper-navBtn"></div>
-                                <div class="swiper-pagination"></div>
-                    </div>
-            </div>
-        </section>
-
-    
-<!-- Newsletter Section -->
-        <section class="section newsletter">
-            <div class="newletter-container container">
-                <a href="#" class="logo-content flex">
-                        <img src="{% static 'grillz/grills/grill-logo.png' %}" class="logo-icon">
-                        <span class="logo-text">The Grills.</span>
-                    </a>
-
-                    <p class="section-description">This is where we rewrite the story through The Grills</p>
-
-                    <div class="newsletter-inputBox">
-                            <input type="email" placeholder="emai@example.com" class="newletter-input">
-                            <button class="button newsletter-button">Subscribe</button>
-                    </div>
-
-                    <div class="newsletter media-icons flex">
-                        <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
-                        <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
-                        <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
-                </div>
-            </div>
-        </section>
 {% endblock %}
         

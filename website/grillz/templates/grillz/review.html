@@ -1,0 +1,81 @@
+{% extends 'grillz/base.html' %}
+{%load static %}
+
+{% block title %}Review - The Gris{% endblock %}
+
+{% block content %}
+<!-- Reviews Section -->
+<section class="section review" id="review">
+	<div class="review-container container">
+		<div class="review-text">
+			<h4 class="section-subtitle"><i>Reviews</i></h4>
+			<h2 class="section-title">What Clients Says</h2>
+			<p class="section-description">Some reviews that customer said about coffee services and business Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt magnam totam repellat, labore commodi exercitationem!</p>
+		</div>
+
+		<div class="tesitmonial swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="testi-content swiper-slide flex">
+					<img src="{% static 'grillz/grills/customer1.jpg' %}" alt="" class="review-img">
+					<p class="review-quote">The best grilling experience I've had, hands down. Can't wait to return to The Grills!"</p>
+					<i class='bx bxs-quote-alt-left quote-icon'></i>
+
+					<div class="testi-personDetails flex">
+						<span class="name">Abodunrin Donchess</span>
+						<span class="job">App Developeer</span>
+					</div>
+				</div>
+				<div class="testi-content swiper-slide flex">
+					<img src="{% static 'grillz/grills/customer2.jpg' %}" alt="" class="review-img">
+					<p class="review-quote">"The Grills were absolutely mouthwatering! Each bite delivered the perfect blend of smoky flavor and juicy tenderness. An unforgettable dining experience that left us craving for more. Highly recommended!"</p>
+					<i class='bx bxs-quote-alt-left quote-icon'></i>
+
+					<div class="testi-personDetails flex">
+						<span class="name">Abodunrin Eriifeoluwa</span>
+						<span class="job">Fullstack Developer</span>
+					</div>
+				</div>
+				<div class="testi-content swiper-slide flex">
+					<img src="{% static 'grillz/grills/customer5.jpg' %}" alt="" class="review-img">
+					<p class="review-quote">Each bite calms my nerves. Thank you for the experience of pure, delicious masters in grilling! It suddenly become my tranquillizer</p>
+					<i class='bx bxs-quote-alt-left quote-icon'></i>
+
+					<div class="testi-personDetails flex">
+						<span class="name">Motunrayo Abodunrin</span>
+						<span class="job">Travel Agent</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next swiper-navBtn"></div>
+			<div class="swiper-button-prev swiper-navBtn"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Newsletter Section -->
+<section class="section newsletter">
+	<div class="newletter-container container>
+		<a href="#" class="logo-content flex">
+			<img src="{% static 'grillz/grills/grill-logo.png' %}" class="logo-icon">
+			<span class="logo-text">The Grills.</span>
+		</a>
+
+		<p class="section-description">This is where we rewrite the story through The Grills</p>
+
+		<div class="newsletter-inputBox">
+			<input type="email" placeholder="emai@example.com" class="newletter-input">
+			<button class="button newsletter-button">Subscribe</button>
+		</div>
+
+		<div class="newsletter media-icons flex">
+			<a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+			<a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+			<a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+			<a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+			<a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+		</div>
+	</div>
+</section>
+{% endblock %}

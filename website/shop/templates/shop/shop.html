@@ -1,18 +1,27 @@
 {% extends 'grillz/base.html' %}
+{%load static %}
 
 {% block title %}Shop - The Grills{% endblock %}
 
 {% block content %}
-<body>
-    <!-- Shop Section -->
-    <section class="shop" id="shop">
-        <div class="container">
-            <h1>Welcome to Our Shop</h1>
-            <!-- Add your shop content here -->
-        </div>
-    </section>
-</body>
-    <!-- Home Section -->
-<section class="home" id="home">
+<!-- Shop Section -->
+<section class="review" id="shop">
+	<div class="review-container container">
+		<div class= "review-text">
+			<div class="product container">
+				<h2 class="section-title">Welcome to Our Shop<br>Our Products</h2>
+				<div class="product-list">
+					{% for product in products %}
+					<div class="product-item">
+						<img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-img">
+						<h3 class="product-name">{{ product.name }}</h3>
+						<p class="product-price">₦{{ product.price }}</p>
+						<button class="button add-to-cart" data-id="{{ product.id }}">Add to Cart</button>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 {% endblock %}
